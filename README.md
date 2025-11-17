@@ -32,6 +32,10 @@ Check the docs: https://docs.connectonion.com<br/>
 Bring your laptop and Cursor IDE/claude code/ codex/ other vibe coding tools<br/>
 Have a project idea in mind<br/>
 
+
+#### Instructions
+1. pyenv activate venvRead
+
 #### 🔗 Links
 
 GitHub: https://github.com/wu-changxing/connectonion<br/>
