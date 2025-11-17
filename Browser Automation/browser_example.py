@@ -1,14 +1,16 @@
 from connectonion import Agent
-from connectonion.tools import BrowserTool
+from connectonion.cli.browser_agent import BrowserAutomation
 
-browser = BrowserTool()
+browser = BrowserAutomation()
 
-agent = Agent("browser-bot", tools=[browser])
+agent = Agent("browser-bot", tools=[browser], model="gpt-4o-mini")
 
-result = agent.input("Navigate to example.com and take a screenshot")
-print(result)
+result = agent.input("Take a screenshot of example.com")
 
-content = agent.input("Extract all the links from the page")
-print(content)
+# result = agent.input("Navigate to example.com and take a screenshot")
+# print(result)
 
-agent.input("Fill the search box with 'AI Agents' and click search")
+# content = agent.input("Extract all the links from the page")
+# print(content)
+
+# agent.input("Fill the search box with 'AI Agents' and click search")
